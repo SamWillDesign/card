@@ -4,4 +4,6 @@ svg:hover{
 
 body{
     font-family: "Lora", serif;
+    color:gray;
+    background-image: url("images/sparkler-background.png");
 }
