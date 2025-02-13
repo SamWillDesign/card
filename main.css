@@ -1,9 +1,11 @@
 svg:hover{
-    fill:blue
+    fill:red
 }
 
 body{
     font-family: "Lora", serif;
     color:gray;
     background-image: url("images/sparkler-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
