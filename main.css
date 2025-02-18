@@ -1,7 +1,80 @@
 body{
     font-family: "Lora", serif;
-    color:gray;
-    background-image: url("images/sparkler-background.png");
+    color:rgb(255, 255, 255);
+    background-image: url("images/Sparkler-Background-2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    background-position: center -700px; 
+
 }
+
+.icon-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width:15%;
+    position:absolute;
+    bottom: 0px;
+    grid-gap: 20px;
+}
+
+.text-container{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+
+  
+  @media (max-width: 768px) { 
+    body {
+      background-position: center center; 
+      color:rgb(120, 111, 111);
+      background-image: url("images/Sparkler-Background-2.png");
+
+    }
+
+    .icon-container{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        width:30%;
+        position:absolute;
+        bottom: 0px;
+        grid-gap: 20px;
+    }
+  }
+
+  /* start of animation */
+  @keyframes flipInY-animation  {
+    from {
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+    }
+  }
+  
+  .flipInY:hover{
+    backface-visibility: visible !important;
+    animation: flipInY-animation 3s infinite;
+  }
