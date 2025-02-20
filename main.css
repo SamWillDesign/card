@@ -31,7 +31,7 @@ body{
   @media (max-width: 768px) { 
     body {
       background-position: center center; 
-      color:rgb(120, 111, 111);
+      color:rgb(255, 255, 255);
       background-image: url("images/Sparkler-Background-2.png");
 
     }
@@ -48,33 +48,4 @@ body{
   }
 
   /* start of animation */
-  @keyframes flipInY-animation  {
-    from {
-      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-      animation-timing-function: ease-in;
-      opacity: 0;
-    }
   
-    40% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-      animation-timing-function: ease-in;
-    }
-  
-    60% {
-      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-      opacity: 1;
-    }
-  
-    80% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    }
-  
-    to {
-      transform: perspective(400px);
-    }
-  }
-  
-  .flipInY:hover{
-    backface-visibility: visible !important;
-    animation: flipInY-animation 3s infinite;
-  }
