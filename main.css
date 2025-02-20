@@ -40,7 +40,7 @@ body{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        width:30%;
+        width:80%;
         position:absolute;
         bottom: 0px;
         grid-gap: 20px;
