@@ -77,5 +77,6 @@ body{
   
 #flipInY:hover {
     backface-visibility: visible !important;
+    animation: flipInY 2s infinite;
     animation-name: flipInY;
   }
